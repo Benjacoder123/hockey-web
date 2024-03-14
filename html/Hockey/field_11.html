@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cancha de 11</title>
+  <link rel="stylesheet" href="../../Assets/Css/styles11.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Home/index.html">5YARDAS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../Home/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../log/log_in.html">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Planificación
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../Hockey/field_11.html">Entrenamientos</a></li>
+            </ul>
+          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cuenta
+              </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../Acount/settings.html">Ajustes</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><button id="cerrar_sesion">Cerrar Sesion</button></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><button id="borrar_sesion">Borrar Cuenta</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="main-container">
+  <h1>Cancha de 11</h1>
+  <div id="field">
+    <img src="../../Assets/img/hockey 11 cancha.jpg" alt="Cancha de 11">
+    
+    <!-- Jugadores -->
+    <div id="player1" class="player" draggable="true" data-name="Jugador 1" data-description="Posicion: **">
+      <span class="player-number">1</span>
+    </div>
+    <div id="player2" class="player" draggable="true" data-name="Jugador 2" data-description="Posición: **">
+      <span class="player-number">2</span>
+    </div>
+    <div id="player3" class="player" draggable="true" data-name="Jugador 3" data-description="Posición: **">
+      <span class="player-number">3</span>
+    </div>
+    <div id="player4" class="player" draggable="true" data-name="Jugador 4" data-description="Posición: **">
+      <span class="player-number">4</span>
+    </div>
+    <div id="player5" class="player" draggable="true" data-name="Jugador 5" data-description="Posición: **">
+      <span class="player-number">5</span>
+    </div>
+    <div id="player6" class="player" draggable="true" data-name="Jugador 6" data-description="Posición: **">
+      <span class="player-number">6</span>
+    </div>
+    <div id="player7" class="player" draggable="true" data-name="Jugador 7" data-description="Posición: **">
+      <span class="player-number">7</span>
+    </div>
+    <div id="player8" class="player" draggable="true" data-name="Jugador 8" data-description="Posición: **">
+      <span class="player-number">8</span>
+    </div>
+    <div id="player9" class="player" draggable="true" data-name="Jugador 9" data-description="Posición: **">
+      <span class="player-number">9</span>
+    </div>
+    <div id="player10" class="player" draggable="true" data-name="Jugador 10" data-description="Posición: **">
+      <span class="player-number">10</span>
+    </div>
+    <div id="player11" class="player" draggable="true" data-name="Jugador 11" data-description="Posición: **">
+      <span class="player-number">11</span>
+    </div>
+    
+    <div id="Arrow_btn" class="tool" draggable="true" data-name="Flecha" data-description="Apunta a objetos">
+    </div>
+
+    <!-- Enemigos -->
+    <div id="enemy1" class="enemy" draggable="true" data-name="Enemigo 1" data-description="Posición: **">
+      <span class="player-number">1</span>
+    </div>
+    <div id="enemy2" class="enemy" draggable="true" data-name="Enemigo 2" data-description="Posicion: **">
+      <span class="player-number">2</span>
+    </div>
+    <div id="enemy3" class="enemy" draggable="true" data-name="Enemigo 3" data-description="Posicion: **">
+      <span class="player-number">3</span>
+    </div>
+    <div id="enemy4" class="enemy" draggable="true" data-name="Enemigo 4" data-description="Posicion: **">
+      <span class="player-number">4</span>
+    </div>
+    <div id="enemy5" class="enemy" draggable="true" data-name="Enemigo 5" data-description="Posicion: **">
+      <span class="player-number">5</span>
+    </div>
+    <div id="enemy6" class="enemy" draggable="true" data-name="Enemigo 6" data-description="Posicion: **">
+      <span class="player-number">6</span>
+    </div>
+    <div id="enemy7" class="enemy" draggable="true" data-name="Enemigo 7" data-description="Posicion: **">
+      <span class="player-number">7</span>
+    </div>
+    <div id="enemy8" class="enemy" draggable="true" data-name="Enemigo 8" data-description="Posicion: **">
+      <span class="player-number">8</span>
+    </div>
+    <div id="enemy9" class="enemy" draggable="true" data-name="Enemigo 9" data-description="Posicion: **">
+      <span class="player-number">9</span>
+    </div>
+    <div id="enemy10" class="enemy" draggable="true" data-name="Enemigo 10" data-description="Posicion: **">
+      <span class="player-number">10</span>
+    </div>
+    <div id="enemy11" class="enemy" draggable="true" data-name="Enemigo 11" data-description="Posicion: **">
+      <span class="player-number">11</span>
+    </div>
+
+
+    <!-- Agrega más jugadores y enemigos según sea necesario -->
+  </div>
+  
+  <p id="player-description"></p>
+  <div class="Arrow"></div>
+</div>
+
+<script src="../../Assets/Js/field_system.js"></script>
+<script src="../../Assets/Js/signup.js"></script>
+</body>
+</html>
